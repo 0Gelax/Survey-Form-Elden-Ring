@@ -1,0 +1,67 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimg.uhdpaper.com%2Fwallpaper%2Felden-ring-775%401%40f-pc-4k.jpg&f=1&nofb=1&ipt=8f9e0601368581b774f2c28a23155d489bf1a28bf35fc20470097f267cfd8cfb&ipo=images);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  color: lightblue;
+}
+
+.cabeçalho {
+  text-align: center;
+  padding: 2rem;
+}
+
+form {
+  position: relative;
+  left: 25%;
+  width: 50vw;
+  background: #222;
+  color: lightblue;
+  padding: 3%;
+  border-radius: 10px;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 0 10px rgba(0,0,0,0.7);
+}
+
+.form-group {
+  display: grid;
+  margin-bottom: 1rem;
+}
+
+.input-textarea,
+.submit-button,
+input,
+select {
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  border-radius: 4px;
+  border: none;
+  font-size: 1rem;
+}
+
+.submit-button {
+  background-color: #333;
+  color: lightblue;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.submit-button:hover {
+  background-color: #444;
+}

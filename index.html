@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Registro ERR</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="cabeçalho">
+      <h1 id="title">Elden Ring Reforged</h1>
+      <p id="description" class="subtitle">Para os interessados em ajudar nesse Projeto</p>
+    </header>
+
+    <form id="survey-form" class="form">
+      <div class="form-group">
+        <label id="name-label" for="name">Nome:</label>
+        <input type="text" id="name" required placeholder="Place your Name" />
+      </div>
+
+      <div class="form-group">
+        <label id="email-label" for="email">Email:</label>
+        <input type="email" id="email" required placeholder="Place your E-mail" />
+      </div>
+
+      <div class="form-group">
+        <label id="number-label" for="number">Idade (Opcional):</label>
+        <input type="number" id="number" placeholder="Age" min="13" max="140" />
+      </div>
+
+      <div class="form-group">
+        <label for="dropdown">Atribuição:</label>
+        <select id="dropdown" name="dropdown">
+          <option disabled selected value>Escolha como você pode nos Ajudar</option>
+          <option value="student">Programador</option>
+          <option value="trainee">Divulgador</option>
+          <option value="translater">Tradutor</option>
+          <option value="FQA">Functionality QA</option>
+          <option value="feedback">Feedback</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <p>Como você conheceu o ERR</p>
+        <label><input type="radio" value="nexus" name="sim" class="input-radio" /> Nexus Mod</label>
+        <label><input type="radio" value="twitter" name="sim" class="input-radio" /> Twitter</label>
+        <label><input type="radio" value="youtube" name="sim" class="input-radio" /> Youtube</label>
+      </div>
+
+      <div class="form-group">
+        <p>O que você gostaria que fosse adicionado:</p>
+        <label><input type="checkbox" name="preferencia" value="new_weapons" /> Novas armas</label>
+        <label><input type="checkbox" name="preferencia" value="new_armors" /> Novas armaduras</label>
+        <label><input type="checkbox" name="preferencia" value="new_magic" /> Novas Magias</label>
+        <label><input type="checkbox" name="preferencia" value="new_talisman" /> Novos Talismãs</label>
+        <label><input type="checkbox" name="preferencia" value="new_fortune" /> Novas Fortunas</label>
+        <label><input type="checkbox" name="preferencia" value="new_bosses" /> Chefes Novos</label>
+        <label><input type="checkbox" name="preferencia" value="new_challenge" /> Novos Desafios</label>
+        <label><input type="checkbox" name="preferencia" value="new_mechanic" /> Novas Mecânicas</label>
+      </div>
+
+      <div class="form-group">
+        <p>Comentários</p>
+        <textarea id="comments" name="comment" class="input-textarea" placeholder="Insira seu comentário aqui"></textarea>
+      </div>
+
+      <div class="form-group">
+        <button type="submit" id="submit" class="submit-button">Enviar</button>
+      </div>
+    </form>
+  </body>
+</html>
